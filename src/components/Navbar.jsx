@@ -136,16 +136,13 @@ const Navbar = () => {
             )}
           </li>
           <li className="nav-item">
-            <a 
-              href="#contact"
+            <Link 
+              to="/contact"
               className={`nav-links ${location.pathname === '/contact' ? 'active' : ''}`}
-              onClick={(e) => {
-                e.preventDefault();
-                handleNavigation('contact-section');
-              }}
+              onClick={() => setIsOpen(false)}
             >
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
           
